@@ -60,6 +60,9 @@ Each function created by this module will have a different refaddr, which
 means that using things like C<set_prototype> or C<set_subname> on one will
 not affect others.
 
+Boolean functions are really unlikely to be a bottleneck in most
+applications, so the use cases for this module are very limited.
+
 =head1 FUNCTIONS
 
 Nothing is exported unless requested.
@@ -102,6 +105,8 @@ Please report any bugs to
 L<http://rt.cpan.org/Dist/Display.html?Queue=Sub-Boolean>.
 
 =head1 SEE ALSO
+
+L<builtin>, L<constant>.
 
 =head1 AUTHOR
 
