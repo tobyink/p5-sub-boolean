@@ -3,6 +3,8 @@
 @prefix : <http://ontologi.es/doap-deps#>.
 
 `Sub-Boolean`
+	:runtime-requirement    [ :on "perl 5.008001"^^:CpanId ];
+	:runtime-requirement    [ :on "Exporter::Shiny 1.004"^^:CpanId ];
 	:test-requirement       [ :on "Test::More 0.96"^^:CpanId ];
 	:develop-recommendation [ :on "Dist::Inkt 0.001"^^:CpanId ];
 	.
