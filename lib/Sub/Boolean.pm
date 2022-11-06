@@ -10,7 +10,7 @@ our $VERSION   = '0.001';
 require XSLoader;
 XSLoader::load(__PACKAGE__, $VERSION);
 
-use Exporter::Shiny qw( make_true make_false make_undef make_empty);
+use Exporter::Shiny qw( make_true make_false make_undef make_empty );
 
 1;
 
@@ -61,6 +61,8 @@ means that using things like C<set_prototype> or C<set_subname> on one will
 not affect others.
 
 =head1 FUNCTIONS
+
+Nothing is exported unless requested.
 
 =head2 C<< make_true( $qualified_name ) >>
 
