@@ -8,7 +8,7 @@ our $AUTHORITY = 'cpan:TOBYINK';
 our $VERSION   = '0.001';
 
 require XSLoader;
-XSLoader::load(__PACKAGE__, $VERSION);
+XSLoader::load( __PACKAGE__, $VERSION );
 
 use Exporter::Shiny qw( make_true make_false make_undef make_empty );
 
@@ -124,4 +124,3 @@ the same terms as the Perl 5 programming language system itself.
 THIS PACKAGE IS PROVIDED "AS IS" AND WITHOUT ANY EXPRESS OR IMPLIED
 WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF
 MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.
-

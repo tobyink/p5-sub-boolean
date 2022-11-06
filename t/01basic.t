@@ -1,3 +1,4 @@
+
 =pod
 
 =encoding utf-8
@@ -30,18 +31,17 @@ make_true( __PACKAGE__ . '::foo' );
 make_false( __PACKAGE__ . '::bar' );
 make_false( __PACKAGE__ . '::baz' );
 
-ok  foo();
-ok  foo(123);
+ok foo();
+ok foo( 123 );
 ok !bar();
-ok !bar(123);
+ok !bar( 123 );
 
-isnt refaddr(\&baz), refaddr(\&bar);
+isnt refaddr( \&baz ), refaddr( \&bar );
 
 make_undef( __PACKAGE__ . '::quux' );
 make_empty( __PACKAGE__ . '::quuux' );
 
-is_deeply [ quux() ], [ undef ];
+is_deeply [ quux() ],  [undef];
 is_deeply [ quuux() ], [];
 
 done_testing;
-
