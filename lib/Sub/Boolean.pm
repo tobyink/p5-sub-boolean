@@ -5,7 +5,7 @@ use warnings;
 package Sub::Boolean;
 
 our $AUTHORITY = 'cpan:TOBYINK';
-our $VERSION   = '0.001';
+our $VERSION   = '1.000000';
 
 require XSLoader;
 XSLoader::load( __PACKAGE__, $VERSION );
