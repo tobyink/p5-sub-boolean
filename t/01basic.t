@@ -5,7 +5,7 @@
 
 =head1 PURPOSE
 
-Test that Sub::Boolean compiles.
+Test that Sub::Boolean works.
 
 =head1 AUTHOR
 
@@ -43,5 +43,10 @@ make_empty( __PACKAGE__ . '::quuux' );
 
 is_deeply [ quux() ],  [undef];
 is_deeply [ quuux() ], [];
+
+ok make_true()->();
+ok !make_false()->();
+is_deeply [ make_undef()->() ], [undef];
+is_deeply [ make_empty()->() ], [];
 
 done_testing;

@@ -75,6 +75,8 @@ Given a fully qualified sub name, installs a sub something like:
     return !!1;
   }
 
+If called as C<< make_true() >> with no name, returns an anonymous coderef.
+
 =head2 C<< make_false( $qualified_name ) >>
 
 Given a fully qualified sub name, installs a sub something like:
@@ -82,6 +84,8 @@ Given a fully qualified sub name, installs a sub something like:
   sub $qualified_name {
     return !!0;
   }
+
+If called as C<< make_false() >> with no name, returns an anonymous coderef.
 
 =head2 C<< make_undef( $qualified_name ) >>
 
@@ -91,6 +95,8 @@ Given a fully qualified sub name, installs a sub something like:
     return undef;
   }
 
+If called as C<< make_undef() >> with no name, returns an anonymous coderef.
+
 =head2 C<< make_empty( $qualified_name ) >>
 
 Given a fully qualified sub name, installs a sub something like:
@@ -98,6 +104,8 @@ Given a fully qualified sub name, installs a sub something like:
   sub $qualified_name {
     return ();
   }
+
+If called as C<< make_empty() >> with no name, returns an anonymous coderef.
 
 =head1 BUGS
 
