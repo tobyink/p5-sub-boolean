@@ -29,7 +29,9 @@ use Scalar::Util qw( refaddr );
 
 make_true( __PACKAGE__ . '::foo' );
 make_false( __PACKAGE__ . '::bar' );
-make_false( __PACKAGE__ . '::baz' );
+
+my $r = make_false( __PACKAGE__ . '::baz' );
+is($r, undef);
 
 ok foo();
 ok foo( 123 );

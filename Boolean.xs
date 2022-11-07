@@ -64,6 +64,7 @@ CODE:
 				cv = newXS(name, XS_Sub__Boolean_empty, __FILE__);
 				break;
 		}
+		XSRETURN_EMPTY;
 	}
 	RETVAL = newRV((SV*)cv);
 OUTPUT:
