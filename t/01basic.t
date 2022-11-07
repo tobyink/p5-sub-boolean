@@ -51,6 +51,6 @@ ok !make_false()->();
 is_deeply [ make_undef()->() ], [undef];
 is_deeply [ make_empty()->() ], [];
 
-isnt refaddr( make_empty(), make_empty() );
+isnt refaddr( make_empty() ), refaddr( make_empty() );
 
 done_testing;
