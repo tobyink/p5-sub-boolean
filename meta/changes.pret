@@ -9,4 +9,5 @@
 	changeset [
 		item "Fix link to issue tracker."^^Documentation;
 		item "Bump version number to the shiny 1.000000 number."^^Packaging;
+		item "Allow the make_foo functions to be called with no parameter and return a coderef."^^Change;
 	].
